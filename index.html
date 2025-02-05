@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav class="nav col-12 d-flex justify-content-between">
+        <div class="d-flex justify-content-between gap-3">
+            <div class="p-3 logo" id="logo">
+                <a class="text-decoration-none" href="#"><img src="./images/house-solid.svg" width="20px"
+                        height="20px">
+                    <span style="color: white; padding-left: 10px;">Logo</span></a>
+            </div>
+
+            <div class=" d-none d-sm-flex ">
+            <a id="link2" class="p-3" href="#"><img src="./images/earth-americas-solid.svg" width="20px"
+                    height="20px"></a>
+            <a id="link3" class="p-3" href="#"><img src="./images/user-solid.svg" width="20px" height="20px"></a>
+            <a id="link4" class="p-3" href="#"><img src="./images/envelope-solid.svg" width="20px" height="20px"></a>
+            <a id="link5" onmouseover="showNotifications()" onmouseout="hideNotifications()" class="p-3" href="#"><img src="./images/bell-solid.svg" width="20px" height="20px">
+                <span style="background-color: #4CAF50; padding-left: 2px; padding-right: 2px;" class=" rounded-pill text-white " width="10px">3
+                </div></a>
+                
+        <div id="notLinks">
+            <ul id="notLinksList">
+                <li ><a class="text-dark text-decoration-none " href="#">One new friend request</a></li>
+                <li><a class="text-dark text-decoration-none " href="#">John Doe posted on your wall</a></li>
+                <li><a class="text-dark text-decoration-none " href="#">Jane likes your post</a></li>
+            </ul>
+        </div>
+    
+    </div>
+        </div>
+
+        <div class="p-3" id="imageForperson">
+
+            <img src="./images/avatar2.png" width="25px" height="25px" style="border-radius: 50%;" class="d-none d-sm-block" >
+            <div>
+            <img  src="./images/bars-solid.svg" width="25px" height="25px" class="d-block d-sm-none d-lg-none" onclick="toggleMenu()" >
+            </div>
+            <div id="links" class="mb-2 " >
+                <ul  class="d-flex flex-column m-0 p-0" style="list-style-type:none ;">
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>My Profile</li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+        <div id="main" class="d-flex flex-column flex-sm-row flex-md-row p-5 justify-content-center gap-3">
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3 d-flex flex-column " id="rightSide">
+            <div class="p-1 " id="rightSide1">
+
+                <div id="rightSide1Profile" class="d-flex flex-column">
+                    <div class="d-flex justify-content-center align-items-center">
+                    <h4>My Profile</h4>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="./images/avatar3.png" width="100px" height="100px" style="border-radius: 50%;">
+                </div>
+                </div>
+                <div class="d-flex justify-content-center ">
+                    <hr width="85%">
+                </div>
+                <div class="d-flex flex-column w-100">
+                    <div>
+                        <img class="imgProfile" src="./images/pen-solid (1).svg" width="15px" height="15px">
+                        <span class="textProfile"> Designer, UI</span>
+                    </div>
+
+                    <div>
+                        <img class="imgProfile" src="./images/house-chimney-solid.svg" width="15px" height="15px">
+                        <span class="textProfile"> London, UK</span>
+                    </div>
+                    <div>
+                        <img class="imgProfile" src="./images/cake-candles-solid (1).svg" width="15px" height="15px">
+                        <span class="textProfile"> April 1, 1988</span>
+                    </div>
+                </div>
+            </div>
+            <div id="rightSide2" class="d-flex flex-column ">
+                <p class="d-block m-0">
+                    <a class="btn d-flex gap-2 w-100" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                        aria-expanded="false" aria-controls="collapseExample1">
+                        <img src="./images/user-group-solid (1).svg" width="20px" height="20px">
+                        <span style="color: white;">My Groups</span>
+                    </a>
+                <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                        Some text..
+                    </div>
+                </div>
+
+                <button class="btn d-flex gap-2 w-100" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    <img src="./images/calendar-check-regular.svg" width="20px" height="20px">
+                    <span style="color: white;">My Events</span>
+                </button>
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                        Some other text..
+                    </div>
+                </div>
+
+                <button class="btn d-flex gap-2 w-100" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    <img src="./images/images-solid.svg" width="20px" height="20px">
+                    <span style="color: white;">My Photos</span>
+                </button>
+                <div class="collapse" id="collapseExample3">
+                    <div class="card card-body">
+                        <div class="d-flex justify-content-around" style="margin-bottom: 10px;">
+                            <img src="./images/lights.jpg" width="150px" height="100px">
+                            <img src="./images/nature.jpg" width="150px" height="100px">
+                        </div>
+                        <div class="d-flex justify-content-around" style="margin-bottom: 10px;">
+                            <img src="./images/mountains.jpg" width="150px" height="100px">
+                            <img src="./images/forest.jpg" width="150px" height="100px">
+                        </div>
+                        <div class="d-flex justify-content-around" style="margin-bottom: 10px;">
+                            <img src="./images/nature.jpg" width="150px" height="100px">
+                            <img src="./images/snow.jpg" width="150px" height="100px">
+
+
+                        </div>
+                    </div>
+                </div>
+                </p>
+
+
+            </div>
+            <div class="mt-3" id="rightSide3">
+                <p>Interests</p>
+
+                <div >
+                    <div class="d-flex justify-content-start gap-1 mb-2 flex-wrap" style="font-size: 12px;">
+                        <span id="rightSide3Interests1">News</span>
+                        <span id="rightSide3Interests2">W3Schools</span>
+                        <span id="rightSide3Interests3">Labels</span>
+                        <span id="rightSide3Interests4">Games</span>
+                        <span id="rightSide3Interests5">Friends</span>
+                    </div>
+                    <div class="d-flex justify-content-start gap-1 mb-2 flex-wrap" style="font-size: 12px;">
+                        <span id="rightSide3Interests6">Games</span>
+                        <span id="rightSide3Interests7">Friends</span>
+                        <span id="rightSide3Interests8">Food</span>
+                        <span id="rightSide3Interests9">Design</span>
+                        <span id="rightSide3Interests10">Art</span>
+                        <span id="rightSide3Interests11">Photos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rightSide4" class="d-none d-sm-flex flex-column">
+                <div class="d-flex justify-content-between p-2">
+                    <span>Hey!</span>
+                    <button id="rightSide4CloseButton" type="button" class="btn-close" aria-label="Close" onclick="clickButton(this)"></button>
+                </div>
+                <span class="p-2">People are looking at your profile. Find out who.</span>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex flex-column" id="content">
+            <div class="p-3" id="contentSide1">
+                <span>Social Media template by w3.css</span>
+                <form>
+                    <input class="w-100 mt-3" value="Status: Feeling Blue" type="text">
+
+                    <div id="contentSide1PostButton" class="btn"> <img src="./images/pen-solid.svg" width="20px"
+                            height="20px"> Post</div>
+                </form>
+            </div>
+            <div id="contentSide2" class="p-3">
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <img style="border-radius: 50%;" src="./images/avatar2.png" width="70px" height="70px">
+                        <span style="font-size: 20px;">John Doe</span>
+                    </div>
+                    <div>
+                        <span>1 min</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <hr width="100%">
+                </div>
+                <div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <div class="d-flex justify-content-center gap-3 mt-2">
+                        <img src="./images/lights.jpg" width="50%" height="240px">
+                        <img src="./images/nature.jpg" width="50%" height="240px">
+                    </div>
+                    <div id="contentSide2LikeAndComment" class="d-flex gap-1 mt-3">
+                        <div id="contentSide2Like" class="btn d-flex gap-2"> <img src="./images/thumbs-up-solid.svg"
+                                width="20px" height="20px"> Like</div>
+                        <div id="contentSide2Comment" class="btn d-flex gap-2"> <img src="./images/comment-solid.svg"
+                                width="20px" height="20px">Comment</div>
+                    </div>
+                </div>
+            </div>
+            <div id="contentSide3" class="p-3">
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-between align-items-center gap-3 fs-5">
+                        <img style="border-radius: 50%;" src="./images/avatar5.png" width="70px" height="70px">
+                        <span>Jane Doe</span>
+                    </div>
+                    <div>16 min</div>
+                </div>
+                <hr>
+                <div>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <div id="contentSide2LikeAndComment" class="d-flex gap-1 mt-3">
+                        <div id="contentSide2Like" class="btn d-flex gap-2"> <img src="./images/thumbs-up-solid.svg"
+                                width="20px" height="20px"> Like</div>
+                        <div id="contentSide2Comment" class="btn d-flex gap-2"> <img src="./images/comment-solid.svg"
+                                width="20px" height="20px">Comment</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="contentSide4" class=" p-3">
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex justify-content-between align-items-center gap-3 fs-5">
+                        <img style="border-radius: 50%;" src="./images/avatar6.png" width="70px" height="70px">
+                        <span>Angie Jane</span>
+                    </div>
+                    <div>32 min</div>
+                </div>
+                <hr>
+                <div>
+                    <span>Have you seen this?</span>
+                    <div class="d-flex justify-content-center">
+                        <img style="margin-top: 20px;" src="./images/nature.jpg" width="100%">
+                    </div>
+                </div>
+                <div class="mt-3 ms-1">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</span>
+                    <div id="contentSide2LikeAndComment" class="d-flex gap-1 mt-3">
+                        <div id="contentSide2Like" class="btn d-flex gap-2"> <img src="./images/thumbs-up-solid.svg"
+                                width="20px" height="20px"> Like</div>
+                        <div id="contentSide2Comment" class="btn d-flex gap-2"> <img src="./images/comment-solid.svg"
+                                width="20px" height="20px">Comment</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 col-sm-3 col-md-3 col-lg-3 d-flex flex-column "  id="leftSide" >
+            <div id="leftSide1" class="p-3 d-flex flex-column lign-items-center" >
+                <div>
+                    <span class="w-100 d-flex justify-content-center">Upcoming Events:</span>
+                </div>
+                <img class="w-100 d-flex justify-content-center mt-2" src="./images/forest.jpg" width="100px"
+                    height="150px">
+                <div class="w-100 d-flex justify-content-center mt-2">
+                    <span>Holiday</span>
+                </div>
+                <div class="w-100 d-flex justify-content-center mt-2">
+                    <span>Friday 15:00</span>
+                </div>
+                <div class="w-100 d-flex justify-content-center mt-2">
+                    <div id="leftSide1InfoButton" class="btn w-100">Info</div>
+                </div>
+            </div>
+
+            <div id="leftSide2" class="p-3">
+                <div class="d-flex justify-content-center">
+                    <span>Friend Request</span>
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <img src="./images/avatar6.png" width="100px" height="100px">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span>Jane Doe</span>
+                </div>
+                <div class="d-flex class=d-flex justify-content-center mt-2">
+                    <div id="leftSide2Correct" style="background-color: #94CF96;" class="btn w-50"><img
+                            src="./images/check-solid.svg" width="15px">
+                    </div>
+                    <div id="leftSide2Incorrect" style="background-color: #F88E86;" class="btn w-50"><img
+                            src="./images/xmark-solid.svg" width="15px">
+                    </div>
+                </div>
+            </div>
+            <div id="leftSide3" class="d-flex justify-content-center align-items-center mt-3" >
+                <span>ADS</span>
+            </div>
+            <div id="leftSide4" class="d-flex justify-content-center align-items-center mt-3" >
+                <img src="./images/bug-solid.svg" width="30px" height="30px">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="col-12">
+        <div id="footerSide1">
+            <span class="fs-5">Footer</span>
+
+        </div>
+        <div id="footerSide2">
+            <span>Powered by
+                 <a style="color: white;" href="https://www.w3schools.com/">w3.css</a>
+                </span>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        function clickButton(e) {
+            console.log("clickButton");
+            
+            document.getElementById("rightSide4").style.visibility = "hidden" ;
+        }
+        function toggleMenu() {
+            var links = document.getElementById("links");
+
+            if (links.style.display == "flex") {
+                links.style.display = "none"
+            } else {
+                links.style.display = "flex"
+            }
+        }
+        document.getElementById("link5").addEventListener("mouseover", function() {
+            document.getElementById("notLinks").style.display = "block";
+        });
+
+        document.getElementById("notLinks").addEventListener("mouseleave", function() {
+            document.getElementById("notLinks").style.display = "none";
+        });
+
+    </script>
+
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>
